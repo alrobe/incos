@@ -1,0 +1,12 @@
+
+Crear una función que, dado el ID de una Provincia, retome una cadena con el nombre la provincia junto a los siguientes datos:
+1. Nombre de cada uno de los municipios que pertenecen dicha provincia. En caso de No tener municipios concatenar el Texto: "SIN MUNICIPIOS"
+2. Junto al nombre de cada Municipio debe mostrarse la cantidad de establecimientos que posee dicho municipio bajo el siguiente detalle:
+* Cantidad de Establecimientos de Salud
+* Cantidad de Establecimientos Industria
+* Cantidad de Establecimientos Públicos (Son aquellos que NO tienen ninguna instancia en Establecimientos de Salud ni de Industria)
+* Cantidad Total de Establecimientos: Suma de los 3 anteriores
+En caso de No tener establecimientos, concatenar el Texto: "SIN ESTABLECIMIENTOS"
+
+3. Junto a la información requerida en los puntos 1 y 2, por cada municipio, debe concatenarse un razón que será el resultado de sumar: la cantidad de Establecimientos de Salud + Cantidad de Establecimientos Industria, dividiendo el resultado entre la Cantidad de Establecimientos Públicos. Controlar la división entre cero, donde para tal caso asumir CERO como valor total.
+4. Concatenar, junto a la información de los puntos 1, 2 y 3, por cada municipio, el promedio de Aflos de Antiguedad de todos los establecimientos que pertenecen al municipio en base a su Fecha de Apertura (Considerar solo resta de años)

@@ -1,0 +1,14 @@
+/home/arobles/workspace/incos/progra/ejercicios/mayorMenor/bin/Debug/net8.0/mayorMenor
+/home/arobles/workspace/incos/progra/ejercicios/mayorMenor/bin/Debug/net8.0/mayorMenor.deps.json
+/home/arobles/workspace/incos/progra/ejercicios/mayorMenor/bin/Debug/net8.0/mayorMenor.runtimeconfig.json
+/home/arobles/workspace/incos/progra/ejercicios/mayorMenor/bin/Debug/net8.0/mayorMenor.dll
+/home/arobles/workspace/incos/progra/ejercicios/mayorMenor/bin/Debug/net8.0/mayorMenor.pdb
+/home/arobles/workspace/incos/progra/ejercicios/mayorMenor/obj/Debug/net8.0/mayorMenor.GeneratedMSBuildEditorConfig.editorconfig
+/home/arobles/workspace/incos/progra/ejercicios/mayorMenor/obj/Debug/net8.0/mayorMenor.AssemblyInfoInputs.cache
+/home/arobles/workspace/incos/progra/ejercicios/mayorMenor/obj/Debug/net8.0/mayorMenor.AssemblyInfo.cs
+/home/arobles/workspace/incos/progra/ejercicios/mayorMenor/obj/Debug/net8.0/mayorMenor.csproj.CoreCompileInputs.cache
+/home/arobles/workspace/incos/progra/ejercicios/mayorMenor/obj/Debug/net8.0/mayorMenor.dll
+/home/arobles/workspace/incos/progra/ejercicios/mayorMenor/obj/Debug/net8.0/refint/mayorMenor.dll
+/home/arobles/workspace/incos/progra/ejercicios/mayorMenor/obj/Debug/net8.0/mayorMenor.pdb
+/home/arobles/workspace/incos/progra/ejercicios/mayorMenor/obj/Debug/net8.0/mayorMenor.genruntimeconfig.cache
+/home/arobles/workspace/incos/progra/ejercicios/mayorMenor/obj/Debug/net8.0/ref/mayorMenor.dll

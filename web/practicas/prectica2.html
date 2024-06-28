@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabla</title>
+</head>
+<body>
+    <h1>Encabezado de la pagina (h1)</h1>
+    <h4>Metodo de navegacion (h4 - nav)</h4>
+    <nav>
+        <ul>
+            <li>
+                <a href="#seccion1">Ir a la Seccion 1</a>
+            </li>
+            <li>
+                <a href="#seccion2">Ir a la Seccion 2</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h2 id="seccion1">Encabezado de la Seccion 1 (h2)</h2>
+    <form >
+        <fieldset>
+            <legend> <strong> Algo de mi informacion (Negrita):</strong></legend>
+            <table border="1">
+                <tr>
+                    <td>
+                        <label for="nombre">Nombre Completo: </label>
+                        <input id="nombre" type="text"> <br>
+
+                        <label for="nacimiento">Fecha de nacimiento: </label>
+                        <input id="nacimiento" type="date"> <br>
+                    </td>
+                    <td>
+                        <strong>Lo que prefiero hacer en mi tiempo libre</strong> <br>
+                        <input type="radio"> Estudiar<br>
+                        <input type="radio"> Dormir<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <strong>Mi nota deseada en el examen(de 1 a 30 paso de 1 en 1)(Negrita)</strong><br>
+                        <input type="range" min="1" max="30" step="1" style="width: 500px;" >
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+
+    <h2 id="seccion2">Encabezado de la Seccion 2 (h2)</h2>
+    <article>
+        <header>
+            <h3>Articulo 1 de la seccion 2 (article con header - h3)</h3>
+        </header>
+        <p>
+            Contenido del Articulo 1 de la seccion 2 (como parrafo)
+        </p>
+    </article>
+    <article>
+        <header>
+            <h3>Articulo 2 de la seccion 2 (article con header - h3)</h3>
+        </header>
+        <p>
+            Contenido del Articulo 2 de la seccion 2 (como parrafo)
+        </p>
+    </article>
+    <aside>
+        <h2>Encabezado de Aside (Aside h2)</h2>
+        <p>
+            Contenido del Aside (parrafo)
+        </p>
+    </aside>
+    <footer>
+        <h2>Pie de pagina (footer h2)</h2>
+        <p>
+            CopyRight: Todos los derechos reservados - Visitanos en <a href="https://www.facebook.com/">Facebook</a> (enlace)
+        </p>
+    </footer>
+</body>
+</html>

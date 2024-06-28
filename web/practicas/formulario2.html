@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabla</title>
+</head>
+<body>
+    <table border="2">
+        <tr>    
+            <th colspan="2">Formulario de inscripcion</td>
+        </tr>
+        <tr>
+            <td>
+                <form>
+                    <fieldset>
+                        <legend>Datos generales</legend>
+                        <label for="nombre">Nombre: </label><br>
+                        <input id="nombre" type="text" size="50" placeholder="Coloca tu nombre completo" > <br>
+
+                        <label for="sexo">Sexo: </label><br>
+                        <select id="sexo">
+                            <option value="hombre">Hombre</option>
+                            <option value="mujer">Mujer</option>
+                        </select><br>
+
+                        <label for="nacimiento"> Fecha de nacimiento: </label><br>
+                        <input type="date" size="50" id="nacimiento"><br>
+
+                        <label for="correo"> Correo electronico: </label><br>
+                        <input type="email" size="50" id="correo" placeholder="Coloca correo"><br>
+                    </fieldset>
+                </form>
+            </td>
+            <td>
+                <form>
+                    <fieldset>
+                        <legend>Datos adicionales</legend>
+                        <label for="direccion">Calle principal: </label><br>
+                        <input type="text" id="direccion" placeholder="Coloca tu direccion"> <br>
+
+                        <label for="numeroCasa">Numero de casa: </label><br>
+                        <input type="number" id="numeroCasa"><br>
+
+                        <label for="descripcionDomicilio"> Descripcion domicilio: </label><br>
+                        <textarea type="" id="descripcionDomicilio"></textarea>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form >
+                    <fieldset>
+                        <legend>Gustos y pasatiempos</legend>
+                        <table border="1">
+                            <tr>
+                                <td>
+                                    Deportes favoritos<br>
+                                    <input type="checkbox"> Basquet<br>
+                                    <input type="checkbox"> Futbol<br>
+                                </td>
+                                <td>
+                                    Mi materia Favorita<br>
+                                    <input type="radio"> Web1<br>
+                                    <input type="radio"> Prog1<br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    Calificate del 1 al 10<br>
+                                    <input type="range" min="1" max="10">
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+            </td>
+            <td>
+                <form>
+                    <fieldset>
+                        <legend>Foto personal</legend>
+                        <img height="120" width="120" src="https://images.pexels.com/photos/7777898/pexels-photo-7777898.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"><br>
+                        <label for="fotografia">Subir fotografia </label><br>
+                        <input type="file" id="fotografia">
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Enviar datos del formulario">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

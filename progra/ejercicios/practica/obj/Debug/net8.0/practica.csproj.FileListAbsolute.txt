@@ -1,0 +1,14 @@
+/home/arobles/workspace/incos/progra/ejercicios/practica/bin/Debug/net8.0/practica
+/home/arobles/workspace/incos/progra/ejercicios/practica/bin/Debug/net8.0/practica.deps.json
+/home/arobles/workspace/incos/progra/ejercicios/practica/bin/Debug/net8.0/practica.runtimeconfig.json
+/home/arobles/workspace/incos/progra/ejercicios/practica/bin/Debug/net8.0/practica.dll
+/home/arobles/workspace/incos/progra/ejercicios/practica/bin/Debug/net8.0/practica.pdb
+/home/arobles/workspace/incos/progra/ejercicios/practica/obj/Debug/net8.0/practica.GeneratedMSBuildEditorConfig.editorconfig
+/home/arobles/workspace/incos/progra/ejercicios/practica/obj/Debug/net8.0/practica.AssemblyInfoInputs.cache
+/home/arobles/workspace/incos/progra/ejercicios/practica/obj/Debug/net8.0/practica.AssemblyInfo.cs
+/home/arobles/workspace/incos/progra/ejercicios/practica/obj/Debug/net8.0/practica.csproj.CoreCompileInputs.cache
+/home/arobles/workspace/incos/progra/ejercicios/practica/obj/Debug/net8.0/practica.dll
+/home/arobles/workspace/incos/progra/ejercicios/practica/obj/Debug/net8.0/refint/practica.dll
+/home/arobles/workspace/incos/progra/ejercicios/practica/obj/Debug/net8.0/practica.pdb
+/home/arobles/workspace/incos/progra/ejercicios/practica/obj/Debug/net8.0/practica.genruntimeconfig.cache
+/home/arobles/workspace/incos/progra/ejercicios/practica/obj/Debug/net8.0/ref/practica.dll

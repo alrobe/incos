@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Bimestre2 examen2</title>
+</head>
+<body>
+    <header>
+        <h1>Encabezado de la pagina</h1>
+    </header>
+    <nav id="navSeccion">
+        <ul>
+            <li><a href="#seccion1">Ir a la Seccion 1</a></li>
+            <li><a href="#navSeccion">Ir al Nav</a></li>
+            <li><a href="#piePagina">Ir al Pie de Pagina</a></li>
+        </ul>
+    </nav>
+    <section id="seccion1">
+        <h2>Encabezado de la seccion 1</h2>
+        <p>
+            <form>
+                <fieldset>
+                    <legend><strong>DATOS GENERALES</strong></legend>
+                    <table border="2">
+                        <tr>
+                            <td>
+                                <strong>Mis materias Favoritas</strong><br>
+                                <input type="checkbox" id="web" value="web">
+                                <label for="web">Web 1</label><br>
+                                <input type="checkbox" id="prg" value="prg">
+                                <label for="prg">PRG 1</label><br>
+                                <input type="checkbox" id="os" value="os">
+                                <label for="os">O.S.</label><br>
+
+                            </td>
+                            <td>
+                                <label for="prefiero"><strong>Lo que prefiero</strong></label><br>
+                                <select name="prefiero" id="prefiero">
+                                    <optgroup label="Comida">
+                                        <option value="charque">Charque</option>
+                                        <option value="pique">Pique</option>
+                                    </optgroup>
+                                    <optgroup label="Deportes">
+                                        <option value="basquet">Basquet</option>
+                                        <option value="futbol">Futbol</option>
+                                    </optgroup>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="curriculum"><strong>Subir mi curriculum</strong></label><br>
+                                <input type="file" id="curriculum" name="curriculum">
+                            </td>   
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </p>
+    </section>
+    <aside>
+        <h2>Encabezado de Aside</h2>
+        <p>Contenido de Aside</p>
+        <article>
+            <header><h4>Articulo 1 del aside</h4></header>
+            <p>Contenido de Articulo 1 del aside</p>
+        </article>
+    </aside>
+    <footer id="piePagina">
+        <h3>Pie de la Pagina</h3>
+        <p>
+            CopyRight: Todos los derechos reservados - Desarrollado por: 
+            <a href="https://www.google.com">DPWEB1</a>
+        </p>
+    </footer>
+</body>
+</html>

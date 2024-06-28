@@ -1,0 +1,11 @@
+networks:
+  db-net:
+
+services:
+  examendb:
+    image: mysql:5.6
+    networks:
+      db-net:
+    env_file: .env
+    volumes:
+      - "./schema.sql:/docker-entrypoint-initdb.d/schema.sql"
