@@ -2,185 +2,224 @@ namespace AprendidendoAritmetica
 {
     public partial class Form1 : Form
     {
-        Random n = new Random();
-        int n1, n2, n3, n4, n5, n6, n7, n8, n9, n10;
+        Random random = new Random();
+        int num1, num2, num3, num4, num5, num6, num7, num8, num9, num10;
         int res1, res2, res3, res4, res5;
-        int rUser1, rUser2, rUser3, rUser4, rUser5;
         int correctos, incorrectos, nota;
-        String mensaje;
 
         public Form1()
         {
             InitializeComponent();
-            radioButton1.Checked = true;
+            set_valores_por_defecto();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonGenerar_Click(object sender, EventArgs e)
         {
-            n1 = n.Next(1, 10);
-            n2 = n.Next(1, 10);
-            n3 = n.Next(1, 10);
-            n4 = n.Next(1, 10);
-            n5 = n.Next(1, 10);
-            n6 = n.Next(1, 10);
-            n7 = n.Next(1, 10);
-            n8 = n.Next(1, 10);
-            n9 = n.Next(1, 10);
-            n10 = n.Next(1, 10);
-            label1.Text = n1.ToString();
-            label2.Text = n2.ToString();
-            label3.Text = n3.ToString();
-            label4.Text = n4.ToString();
-            label5.Text = n5.ToString();
-            label6.Text = n6.ToString();
-            label7.Text = n7.ToString();
-            label8.Text = n8.ToString();
-            label16.Text = n9.ToString();
-            label17.Text = n10.ToString();
+            generar_aleatorios();
+            buttonCalcular.Enabled = true;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonCalcular_Click(object sender, EventArgs e)
         {
-            if (radioButton1.Checked)
+            realizar_operaciones();
+            comparar_res();
+            calcular_nota();
+        }
+
+        private void buttonLimpiar_Click(object sender, EventArgs e)
+        {
+            set_valores_por_defecto();
+        }
+
+
+        private void radioButtonOper_CheckedChanged(object sender, EventArgs e)
+        {
+            actualizar_operadores();
+        }
+
+        private void generar_aleatorios()
+        {
+            num1 = random.Next(1, 10);
+            num2 = random.Next(1, 10);
+            num3 = random.Next(1, 10);
+            num4 = random.Next(1, 10);
+            num5 = random.Next(1, 10);
+            num6 = random.Next(1, 10);
+            num7 = random.Next(1, 10);
+            num8 = random.Next(1, 10);
+            num9 = random.Next(1, 10);
+            num10 = random.Next(1, 10);
+            labelNum1.Text = num1.ToString();
+            labelNum2.Text = num2.ToString();
+            labelNum3.Text = num3.ToString();
+            labelNum4.Text = num4.ToString();
+            labelNum5.Text = num5.ToString();
+            labelNum6.Text = num6.ToString();
+            labelNum7.Text = num7.ToString();
+            labelNum8.Text = num8.ToString();
+            labelNum9.Text = num9.ToString();
+            labelNum10.Text = num10.ToString();
+        }
+
+        
+
+        private void actualizar_operadores()
+        {
+            if (radioButtonSum.Checked)
             {
-                res1 = n1 + n2;
-                res2 = n3 + n4;
-                res3 = n5 + n6;
-                res4 = n7 + n8;
-                res5 = n9 + n10;
+                actualizar_operadores("+");
             }
-            else if (radioButton2.Checked)
+            else if (radioButtonRes.Checked)
             {
-                res1 = n1 - n2;
-                res2 = n3 - n4;
-                res3 = n5 - n6;
-                res4 = n7 - n8;
-                res5 = n9 - n10;
+                actualizar_operadores("-");
             }
-            else if (radioButton3.Checked)
+            else if (radioButtonProd.Checked)
             {
-                res1 = n1 * n2;
-                res2 = n3 * n4;
-                res3 = n5 * n6;
-                res4 = n7 * n8;
-                res5 = n9 * n10;
+                actualizar_operadores("x");
             }
-            else if (radioButton4.Checked)
+            else if (radioButtonDiv.Checked)
             {
-                res1 = n1 / n2;
-                res2 = n3 / n4;
-                res3 = n5 / n6;
-                res4 = n7 / n8;
-                res5 = n9 / n10;
+                actualizar_operadores("/");
+            }
+
+        }
+
+        private void actualizar_operadores(string operador)
+        {
+            labelOperacion1.Text = operador;
+            labelOperacion2.Text = operador;
+            labelOperacion3.Text = operador;
+            labelOperacion4.Text = operador;
+            labelOperacion5.Text = operador;
+        }
+
+        private void realizar_operaciones()
+        {
+            if (radioButtonSum.Checked)
+            {
+                res1 = num1 + num2;
+                res2 = num3 + num4;
+                res3 = num5 + num6;
+                res4 = num7 + num8;
+                res5 = num9 + num10;
+            }
+            else if (radioButtonRes.Checked)
+            {
+                res1 = num1 - num2;
+                res2 = num3 - num4;
+                res3 = num5 - num6;
+                res4 = num7 - num8;
+                res5 = num9 - num10;
+            }
+            else if (radioButtonProd.Checked)
+            {
+                res1 = num1 * num2;
+                res2 = num3 * num4;
+                res3 = num5 * num6;
+                res4 = num7 * num8;
+                res5 = num9 * num10;
+            }
+            else if (radioButtonDiv.Checked)
+            {
+                res1 = num1 / num2;
+                res2 = num3 / num4;
+                res3 = num5 / num6;
+                res4 = num7 / num8;
+                res5 = num9 / num10;
             }
             else
             {
-                label15.Text = "Debe seleccionar una operacion";
-                label15.BackColor = Color.Red;
-                return;
+                labelMensaje.Text = "Debe seleccionar una operacion";
+                labelMensaje.BackColor = Color.Red;
             }
+        }
 
-            rUser1 = int.Parse(textBox1.Text);
-            rUser2 = int.Parse(textBox2.Text);
-            rUser3 = int.Parse(textBox3.Text);
-            rUser4 = int.Parse(textBox4.Text);
-            rUser5 = int.Parse(textBox5.Text);
+        private void comparar_res()
+        {
             correctos = 0;
             incorrectos = 0;
+            comparar_res(textBoxRes1, res1);
+            comparar_res(textBoxRes2, res2);
+            comparar_res(textBoxRes3, res3);
+            comparar_res(textBoxRes4, res4);
+            comparar_res(textBoxRes5, res5);
+        }
 
-            if (rUser1 == res1)
+        private void comparar_res(TextBox textBoxResUser, int res)
+        {
+            int res_user;
+            bool res_user_valid = int.TryParse(textBoxResUser.Text, out res_user);
+
+            if (res_user_valid && res == res_user)
             {
                 correctos = correctos + 1;
+                textBoxResUser.BackColor = Color.Green;
             }
             else
             {
                 incorrectos = incorrectos + 1;
+                textBoxResUser.BackColor = Color.Red;
             }
+        }
 
-            if (rUser2 == res2)
-            {
-                correctos = correctos + 1;
-            }
-            else
-            {
-                incorrectos = incorrectos + 1;
-            }
-
-            if (rUser3 == res3)
-            {
-                correctos = correctos + 1;
-            }
-            else
-            {
-                incorrectos = incorrectos + 1;
-            }
-
-            if (rUser4 == res4)
-            {
-                correctos = correctos + 1;
-            }
-            else
-            {
-                incorrectos = incorrectos + 1;
-            }
-
-            if (rUser5 == res5)
-            {
-                correctos = correctos + 1;
-            }
-            else
-            {
-                incorrectos = incorrectos + 1;
-            }
-
+        private void calcular_nota()
+        {
             nota = correctos * 20;
-            label12.Text = correctos.ToString();
-            label13.Text = incorrectos.ToString();
-            label14.Text = nota.ToString();
+
+            labelCorrectos.Text = correctos.ToString();
+            labelIncorrectos.Text = incorrectos.ToString();
+            labelNota.Text = nota.ToString();
 
             if (nota > 51)
             {
-                label15.Text = "Aprobado";
-                label15.BackColor = Color.Green;
+                labelMensaje.Text = "Aprobado";
+                labelMensaje.BackColor = Color.Green;
             }
             else
             {
-                label15.Text = "Reprobado";
-                label15.BackColor = Color.Red;
+                labelMensaje.Text = "Reprobado";
+                labelMensaje.BackColor = Color.Red;
 
             }
-
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void set_valores_por_defecto()
         {
-            label1.Text = "Num1";
-            label2.Text = "Num2";
-            label3.Text = "Num3";
-            label4.Text = "Num4";
-            label5.Text = "Num5";
-            label6.Text = "Num6";
-            label7.Text = "Num7";
-            label8.Text = "Num8";
-            label16.Text = "Num9";
-            label17.Text = "Num10";
+            labelNum1.Text = "0";
+            labelNum2.Text = "0";
+            labelNum3.Text = "0";
+            labelNum4.Text = "0";
+            labelNum5.Text = "0";
+            labelNum6.Text = "0";
+            labelNum7.Text = "0";
+            labelNum8.Text = "0";
+            labelNum9.Text = "0";
+            labelNum10.Text = "0";
 
-            textBox1.Text = "";
-            textBox2.Text = "";
-            textBox3.Text = "";
-            textBox4.Text = "";
-            textBox5.Text = "";
+            textBoxRes1.Text = "0";
+            textBoxRes2.Text = "0";
+            textBoxRes3.Text = "0";
+            textBoxRes4.Text = "0";
+            textBoxRes5.Text = "0";
+            textBoxRes1.BackColor = Color.White;
+            textBoxRes2.BackColor = Color.White;
+            textBoxRes3.BackColor = Color.White;
+            textBoxRes4.BackColor = Color.White;
+            textBoxRes5.BackColor = Color.White;
 
-            radioButton1.Checked = true;
-            radioButton2.Checked = false;
-            radioButton3.Checked = false;
-            radioButton4.Checked = false;
+            radioButtonSum.Checked = true;
+            radioButtonRes.Checked = false;
+            radioButtonProd.Checked = false;
+            radioButtonDiv.Checked = false;
 
-            label12.Text = "0";
-            label13.Text = "0";
-            label14.Text = "0";
-            label15.Text = "";
+            labelCorrectos.Text = "0";
+            labelIncorrectos.Text = "0";
+            labelNota.Text = "0";
+            labelMensaje.Text = "";
 
+            buttonCalcular.Enabled = false;
+
+            actualizar_operadores();
         }
     }
 }
