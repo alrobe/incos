@@ -1,0 +1,23 @@
+nav {
+background-color: cornflowerblue;
+width: 100%;
+height: auto;
+padding: 20px;
+}
+#izquierda{
+background-color:#3bec7e;
+float: left;
+min-height: 500px;
+width: 20%;
+}
+#derecha{
+background-color:#ff6b53;
+float: right;
+min-height: 500px;
+width: 80%;
+}
+#pie{
+background-color:#feff86;
+min-height: 500px;
+width: 100%;
+}

@@ -1,0 +1,42 @@
+.box1 {
+    background-color: #BD3A34;
+    margin: 10px;
+    border-top-style: dashed;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-bottom-style: dashed;
+    border-color: #084c61;
+    border-width: 5px;
+}
+
+.box2 {
+    background-color: #FFD500;
+    margin: 20px;
+    border-top-style: double;
+    border-left-style: dotted;
+    border-right-style: dotted;
+    border-bottom-style: double;
+    border-color: #177E89;
+    border-width: 10px;
+}
+
+.box3 {
+    background-color: #06D6A0;
+    margin: 30px;
+    border-top-style: groove;
+    border-right-style: groove;
+    border-color: #073B4C;
+    border-width: 15px;
+}
+
+.box4 {
+    /* background-image: url('https://www.w3schools.com/css/img_flwr.gif'); */
+
+    background-image: url('resources/imagen.jpeg');
+    margin: 10px;
+    border-left-style: dashed;
+    border-right-style: solid;
+    border-color: #118AB2;
+    border-width: 20px;  
+}
+

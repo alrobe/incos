@@ -1,0 +1,48 @@
+.headera {
+    height: 25%;
+    width: 100%;
+    background-color: #f2eded;
+    font-size: 20px;
+}
+
+.navbara {
+    height: 10%;
+    width: 100%;
+    background-color: #b34fba;
+    font-size: 25px;
+}
+
+.sectiona {
+    height: 30%;
+    width: auto;
+    margin: 10PX;
+    background-color: #b34fba;
+    font-size: 25px;
+}
+
+.articlea {
+    height: 10%;
+    width: auto;
+    margin: 15px;
+    background-color: #f2eded;
+}
+
+.articlebgeneral {
+    flex: content;
+    flex-direction: row;
+}
+
+.articleb {
+    float: left;
+    min-height: 100px;
+    width: auto;
+    max-width: 31%;
+    background-color: #0083cb;
+    margin: 1%;
+}
+
+.parrafoa {
+    background-color: white;
+    margin: 3px;
+}
+

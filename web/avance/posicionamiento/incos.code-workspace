@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../aroba/aroba-web"
+		},
+		{
+			"path": "../../../../mecamovil"
+		},
+		{
+			"path": "../../../../rml-app"
+		},
+		{
+			"path": "../../../../aroba/arobatemplate"
+		},
+		{
+			"path": "../../examen/Bimestre3Examen3"
+		}
+	],
+	"settings": {}
+}

@@ -1,0 +1,16 @@
+* {
+margin: 0;
+padding: 0;
+font-size: 1.1rem;
+}
+
+nav {
+position: fixed;
+background-color: cornflowerblue;
+width: 100%;
+height: auto;
+padding: 20px;
+}
+p {
+padding: 10px;
+}

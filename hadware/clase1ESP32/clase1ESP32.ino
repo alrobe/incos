@@ -20,7 +20,7 @@ void setup()
 void loop()
 {
   //Obtenemos la señal del potenciometro
-  BRILLO = analogRead(pinPot);
+  BRILLO = analogRead(        );
   //Mostramos la señal del potenciometro
   //desde 0 a 4095
   //Dividimos la señal en entre 16
