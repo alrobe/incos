@@ -1,8 +1,0 @@
-Ingresar a un directorio: cd
-Ruta relativa: cd ../..
-Verdonde estoy ubicado: pwd
-Ruta absoluta: cd /home/user/Documents
-Ir atras: cd ..
-Cambiar carpeta al directorio de inicio: cd ~
-crear carpetas: mkdir dir1 dir2 dir3
-
