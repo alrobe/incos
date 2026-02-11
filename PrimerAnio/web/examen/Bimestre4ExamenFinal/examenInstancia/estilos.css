@@ -1,0 +1,16 @@
+.nombre{
+    background-color: white;
+    color: #e13f3d;
+    height: 100%;
+    width:  100%;
+}
+.contenido{
+    padding:  15px;
+    background-color: #e13f3d;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+.parrafo{
+    padding:  15px;
+}

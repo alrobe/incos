@@ -1,0 +1,13 @@
+.nombre{
+    background-color: white;
+    color: #e13f3d;
+    height: 60px;
+    width:  100%;
+}
+.materia{
+    padding:  20px;
+    background-color: #e13f3d;
+    color: white;
+    height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var nombres = ["JUAN", "JAIME", "LUIS", "ANA"];
+        var nombreABuscar = "Tito";
+        var existeNombre = false;
+        var nombreIndice;
+        for(indice in nombres) {
+            if(nombreABuscar.toLowerCase()==nombres[indice].toLowerCase()){
+                existeNombre = true;
+                nombreIndice = indice;
+            }
+        }
+
+        if (existeNombre) {
+            alert("Si existe el nombre en la posicion " + nombreIndice);
+        } else {
+            alert("No existe el nombre");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
